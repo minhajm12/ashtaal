@@ -10,6 +10,11 @@
     /* border:1px solid #000; */
 }
 
+p,h1,h2,h3,h4,h5,h6
+{
+    margin:0 !important;
+}
+
 :root
 {
     --main-color:#006F62;
@@ -86,7 +91,7 @@
     /* width: 10px; */
     /* height: 10px; */
     border-radius: 20px;
-    background: red;
+    background: var(--main-color);
     padding:4px 10px;
     font-weight: 600;
     color: #fff;
@@ -117,6 +122,7 @@
     height: calc(var(--main-height) - var(--header-height));
     display: flex;
     align-items:end ;
+    position: relative;
     /* background: #67A58040; */
 }
 #banner-section .text-col h1
@@ -161,27 +167,31 @@
 #banner-section .main-img-div
 {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #banner-section .main-img-div img
 {
-    transform: scale(1.1);
+    transform: scale(1);
     margin-bottom: -80px;
     animation: scale 3s ease-in-out infinite;
+    width: 100% !important;
 }
 
 @keyframes scale
 {
     0%,100%
     {
-        transform:scale(1.1);
+        transform:scale(1);
     }
     50%
     {
-        transform:scale(1.2);
+        transform:scale(1.1);
     }
 }
 
-#banner-section .main-img-div .rectangle
+#banner-section .main-img-div .rectangle-1
 {
     display: inline-block;
     position: absolute;
@@ -194,7 +204,167 @@
     background: linear-gradient(to bottom, #006F62, #006F6200);
     z-index: -1;
 }
+#banner-section .main-img-div .rectangle-2
+{
+    background: linear-gradient(to bottom, #FF9900, #FF990000);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 80%;
+    border-radius: 300px 300px 0 0;
+    z-index: -1;
+}
 .main-colums
 {
     height: var(--banner-height);
+}
+
+#banner-section .img-div-2,
+#banner-section .img-div-3
+{
+    position: relative;
+    height: 200px;
+    /* background: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    object-fit: contain;
+}
+#banner-section .main-slider-colums .right .top
+{
+    display: flex;
+    /* gap:60px; */
+}
+#banner-section .main-slider-colums .right .top img
+{
+    transition: .3s ease;
+    width: 50% !important;
+}
+#banner-section .right .top .img-div-2:hover img, #banner-section .right .top .img-div-3:hover img
+{
+    transform: scale(1.1);
+}
+#banner-section .img-div-2 .circle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FF9900;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    z-index: -1;
+}
+#banner-section .img-div-3 .circle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #00BCA6;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    z-index: -1;
+}
+
+#banner-section .main-slider-colums .right .bottom
+{
+    padding-top: 80px;
+}
+#banner-section .main-slider-colums .right .bottom h3
+{
+    font-size: 36px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+
+
+.circle-main
+{
+    position: absolute;
+    right: 5%;
+    bottom: -15%;
+}
+.circle-rotate-div
+{
+    /* position: relative; */
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.circle-rotate-div .rotateimg
+{
+    animation: anim 10s linear infinite;
+}
+@keyframes anim
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.rotate-btn-arrow
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* .circle-rotate-div .text
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: anim 10s linear infinite;
+}
+@keyframes anim
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.circle-rotate-div .text span
+{
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin:0 100px;
+    color: #fff;
+} */
+
+.owl-carousel .owl-stage-outer
+{
+    overflow-x: clip !important;
+    overflow: unset;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled
+{
+    display: block;
+}
+.owl-nav span
+{
+    font-size: 30px;
 }
