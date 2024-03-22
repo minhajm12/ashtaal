@@ -8,7 +8,7 @@ const bannerHeight = document.getElementById('banner-section').offsetHeight;
 document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
 document.documentElement.style.setProperty('--main-height', `${mainHeight}px`);
 document.documentElement.style.setProperty('--banner-height', `${bannerHeight}px`);
-// console.log(bannerHeight);
+// console.log(containerWidth);
 
 
 
@@ -110,6 +110,40 @@ $(document).ready(function(){
     // owl.trigger('changed.owl.carousel', {item: {index: owl.find('.owl-item.active').index()}});
 });
 
+
+
+
+
+
+
+
+
+
+
+
+// SWIPER SLIDER
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: false,
+    },
+    breakpoints: {
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2.5,
+        spaceBetween: 30
+      },
+      // when window width is >= 1024px
+      1024: {
+        slidesPerView: 2.5,
+        spaceBetween: 40
+      }
+      // Add more breakpoints as needed
+    }
+  });
+  
 
 
 
