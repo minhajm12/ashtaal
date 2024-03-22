@@ -89,25 +89,25 @@ $(document).ready(function(){
         slideToScroll: 1
     });
 
-    // Add event listener for slide change
-    owl.on('changed.owl.carousel', function(event) {
-        var currentIndex = event.item.index;
-        changeBackgroundColor(currentIndex);
-    });
+    // // Add event listener for slide change
+    // owl.on('changed.owl.carousel', function(event) {
+    //     var currentIndex = event.item.index;
+    //     changeBackgroundColor(currentIndex);
+    // });
 
-    // Function to change background color based on slide index
-    function changeBackgroundColor(index) {
-        if (index === 0 || index === 2) {
-            $('#main-banner').css('background-color', '#67A58040'); // Change background color for first and third slide
-        } else if (index === 2) {
-            $('#main-banner').css('background-color', '#FF0000'); // Change background color for second slide
-        } else {
-            $('#main-banner').css('background-color', '#eee'); // Default background color
-        }
-    }
+    // // Function to change background color based on slide index
+    // function changeBackgroundColor(index) {
+    //     if (index === 0 || index === 2) {
+    //         $('#main-banner').css('background-color', '#67A58040'); // Change background color for first and third slide
+    //     } else if (index === 2) {
+    //         $('#main-banner').css('background-color', '#FF0000'); // Change background color for second slide
+    //     } else {
+    //         $('#main-banner').css('background-color', '#eee'); // Default background color
+    //     }
+    // }
 
-    // Manually trigger background color change after initialization
-    owl.trigger('changed.owl.carousel', {item: {index: owl.find('.owl-item.active').index()}});
+    // // Manually trigger background color change after initialization
+    // owl.trigger('changed.owl.carousel', {item: {index: owl.find('.owl-item.active').index()}});
 });
 
 

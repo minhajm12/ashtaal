@@ -385,24 +385,24 @@ p,h1,h2,h3,h4,h5,h6
     color: #fff;
 } */
 
-.owl-carousel .owl-stage-outer
+#banner-section .owl-carousel .owl-stage-outer
 {
     overflow-x: clip !important;
     overflow: unset;
 }
-.owl-carousel .owl-nav.disabled
+#banner-section .owl-carousel .owl-nav.disabled
 {
     display: block;
 }
-.owl-nav span
+#banner-section .owl-nav span
 {
     font-size: 30px;
 }
-.owl-carousel .owl-dots
+#banner-section .owl-carousel .owl-dots
 {
     display: none !important;
 }
-.owl-carousel .owl-nav
+#banner-section .owl-carousel .owl-nav
 {
     width: fit-content;
     display: flex;
@@ -411,12 +411,12 @@ p,h1,h2,h3,h4,h5,h6
     bottom: 30px;
     right: 43%;
 }
-.owl-carousel .owl-nav .owl-prev span,
-.owl-carousel .owl-nav .owl-next span
+#banner-section .owl-carousel .owl-nav .owl-prev span,
+#banner-section .owl-carousel .owl-nav .owl-next span
 {
     display: none;
 }
-.owl-carousel .owl-nav .owl-prev
+#banner-section .owl-carousel .owl-nav .owl-prev
 {
     height: fit-content;
     /* background: #fff !important; */
@@ -429,8 +429,14 @@ p,h1,h2,h3,h4,h5,h6
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+    transition: .3s ease;
 }
-.owl-carousel .owl-nav .owl-next
+#banner-section .owl-carousel .owl-nav .owl-prev:hover
+{
+    background: url('../img/SVG/owl-nav-left-hvr.svg') !important;
+    background-size: contain !important;
+}
+#banner-section .owl-carousel .owl-nav .owl-next
 {
     height: fit-content;
     /* background: #fff !important; */
@@ -443,8 +449,61 @@ p,h1,h2,h3,h4,h5,h6
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+    transition: .3s ease;
 }
+#banner-section .owl-carousel .owl-nav .owl-next:hover
+{
+    background: url('../img/SVG/owl-nav-right-hvr.svg') !important;
+    background-size: contain !important;
+}
+.owl-carousel .owl-item img
+{
+    width: unset !important;
+}
+
+
 #banner-section .main-slider-colums
 {
     position: relative;
+}
+
+
+#banner-section .main-slider-colums .left .pricing-main
+{
+    display: flex;
+    gap:20px;
+    position: absolute;
+    left: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #ffffff10;
+    backdrop-filter: blur(20px);
+    width: 60%;
+    border: 2px solid #fff;
+}
+#banner-section .left .pricing-main .img-div
+{
+    width: 40%;
+}
+#banner-section .left .pricing-main img
+{
+    /* object-fit: cover; */
+    border-radius: 10px;
+}
+#banner-section .left .pricing-main h4
+{
+    font-size: 16px;
+    font-weight: 700;
+}
+#banner-section .left .pricing-main .price
+{
+    font-weight: 700;
+    color: #C72626;
+}
+#banner-section .left .pricing-main .price-details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
 }
