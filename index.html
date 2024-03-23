@@ -31,12 +31,65 @@
             <div id="header">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="" width="90px"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt=""></a>
+
+
+                        <div class="offcanvas offcanvas-start d-lg-none d-md-block" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <a href="#">
+                                    <img src="assets/img/logo.svg" alt="" class="img-fluid">
+                                </a>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Who We Are</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">What We Do</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Galllery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Career</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                                <div class="d-lg-block">
+                                    <a href="#" class="webstore nav-link">Web Store
+                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.814 6.21182L0.535156 12.1463L4.02258 6.21191L0.535156 0.277343L10.814 6.21182Z"
+                                                fill="#006F62" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="language">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            English
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                            <li><a class="dropdown-item" href="#">Arabic</a></li>
+                                            <li><a class="dropdown-item" href="#">German</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <a href="" class="sign-in-offcanvas">Sign Up / Sign In</a>
+                            </ul>
+                        </div>
+
+
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -60,8 +113,17 @@
 
                             </ul>
                         </div>
+
                         <div class="right">
-                            <div>
+
+                            <button class="navbar-toggler order-3" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <span class="navbar-toggler-icon">
+                                    <img src="assets/img/SVG/breadcrumbs.svg" alt="" class="img-fluid">
+                                </span>
+                            </button>
+
+                            <div class="d-lg-block d-md-none d-none">
                                 <a href="#" class="webstore">Web Store
                                     <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +133,7 @@
                                     </svg>
                                 </a>
                             </div>
-                            <div class="language">
+                            <div class="language d-lg-block d-md-none d-none">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
@@ -99,23 +161,23 @@
 
             <div id="banner-section">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-4 main-colums">
+                    <div class="row main-row">
+                        <div class="col-lg-4 col-md-12 main-colums">
                             <div class="text-col">
                                 <h1>Bringing <br><span class="spec-color">Life To</span> Your Spaces <img
-                                        src="assets/img/item-text-plant.png" alt="" class="img-fluid" width="60px"></h1>
+                                        src="assets/img/item-text-plant.png" alt="" class="img-fluid"></h1>
                                 <p>Find your dream plant for your home Decoration with us, and we will make it happen
                                 </p>
                                 <a href="" class="main-btn">Shop Now <img src="assets/img/SVG/arrow.svg" alt=""></a>
                             </div>
                         </div>
 
-                        <div class="col-8">
+                        <div class="col-lg-8 col-md-12">
                             <div class="main-slider-colums owl-carousel">
 
                                 <div class="items">
                                     <div class="row">
-                                        <div class="col-6 left">
+                                        <div class="col-lg-6 col-md-7 left">
                                             <div class="main-img-div">
                                                 <img src="assets/img/plant-main/main-plant.png" alt="" class="img-fluid"
                                                     width="">
@@ -132,7 +194,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 right">
+                                        <div class="col-lg-6 col-md-5 right d-md-block d-none">
                                             <div class="top">
                                                 <div class="side-img-div col-6">
                                                     <div class="img-div-2">
@@ -152,21 +214,24 @@
                                                 <h3>500+</h3>
                                                 <p>Unique Plants Including Signature Items</p>
                                             </div>
+                                            <div class="btm-nmbrs">
+                                                01 / 03
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="items">
                                     <div class="row">
-                                        <div class="col-6 left">
+                                        <div class="col-lg-6 col-md-7 left">
                                             <div class="main-img-div">
-                                                <img src="assets/img/plant-main/main-plant-2.png" alt=""
+                                                <img src="assets/img/plant-main/main-plant-3.png" alt=""
                                                     class="img-fluid">
                                                 <span class="rectangle-2"></span>
                                             </div>
                                             <div class="pricing-main">
                                                 <div class="img-div">
-                                                    <img src="assets/img/pricing-img/pricing-img-1.jpg" alt=""
+                                                    <img src="assets/img/pricing-img/pricing-img-2.jpg" alt=""
                                                         class="img-fluid">
                                                 </div>
                                                 <div class="price-details">
@@ -175,7 +240,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 right">
+                                        <div class="col-lg-6 col-md-5 right d-md-block d-none">
                                             <div class="top">
                                                 <div class="side-img-div col-6">
                                                     <div class="img-div-2">
@@ -186,8 +251,7 @@
                                                 </div>
                                                 <div class="side-img-div col-6">
                                                     <div class="img-div-3">
-                                                        <img src="assets/img/side-plant-3.png" alt="" class="img-fluid"
-                                                            width="50%">
+                                                        <img src="assets/img/side-plant-1.png" alt="" class="img-fluid">
                                                         <span class="circle4 circle-div"></span>
                                                     </div>
                                                 </div>
@@ -196,21 +260,24 @@
                                                 <h3>500+</h3>
                                                 <p>Unique Plants Including Signature Items</p>
                                             </div>
+                                            <div class="btm-nmbrs">
+                                                02 / 03
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="items">
                                     <div class="row">
-                                        <div class="col-6 left">
+                                        <div class="col-lg-6 col-md-7 left">
                                             <div class="main-img-div">
-                                                <img src="assets/img/plant-main/main-plant-3.png" alt=""
+                                                <img src="assets/img/plant-main/main-plant-2.png" alt=""
                                                     class="img-fluid">
-                                                <span class="rectangle-2"></span>
+                                                <span class="rectangle-3"></span>
                                             </div>
                                             <div class="pricing-main">
                                                 <div class="img-div">
-                                                    <img src="assets/img/pricing-img/pricing-img-1.jpg" alt=""
+                                                    <img src="assets/img/pricing-img/pricing-img-3.jpg" alt=""
                                                         class="img-fluid">
                                                 </div>
                                                 <div class="price-details">
@@ -219,11 +286,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 right">
+                                        <div class="col-lg-6 col-md-5 right d-md-block d-none">
                                             <div class="top">
                                                 <div class="side-img-div col-6">
                                                     <div class="img-div-2">
-                                                        <img src="assets/img/side-plant-2.png" alt="" class="img-fluid"
+                                                        <img src="assets/img/side-plant-1.png" alt="" class="img-fluid"
                                                             width="50%">
                                                         <span class="circle5 circle-div"></span>
                                                     </div>
@@ -240,6 +307,9 @@
                                                 <h3>500+</h3>
                                                 <p>Unique Plants Including Signature Items</p>
                                             </div>
+                                            <div class="btm-nmbrs">
+                                                03 / 03
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -248,25 +318,25 @@
                         </div>
 
                     </div>
-                    <div class="circle-main">
-                        <a href="">
-                            <div class="circle-rotate-div">
-                                <img src="assets/img/rotate-btn.png" alt="" class="img-fluid rotateimg">
-                                <img src="assets/img/rotate-arrow.svg" alt="" class="rotate-btn-arrow img-fluid">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="social-icons">
-                        <div class="d-flex flex-column align-items-center gap-3">
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-x-twitter"></i>
-                            <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="circle-main">
+                    <a href="">
+                        <div class="circle-rotate-div">
+                            <img src="assets/img/rotate-btn.png" alt="" class="img-fluid rotateimg">
+                            <img src="assets/img/rotate-arrow.svg" alt="" class="rotate-btn-arrow img-fluid">
                         </div>
-                        <span class="line"></span>
-                        <p class="follow-us">Follow Us</p>
+                    </a>
+                </div>
+                <div class="social-icons">
+                    <div class="d-flex flex-column align-items-center gap-3">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
                     </div>
+                    <span class="line"></span>
+                    <p class="follow-us">Follow Us</p>
                 </div>
             </div>
         </div>
@@ -442,7 +512,7 @@
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-12 left">
                     <div class="img-div">
-                        <img src="assets/img/step-fwd-img.jpg" alt="" class="img-fluid">
+                        <img src="assets/img/step-fwd-img.jpg" alt="" class="img-fluid main-img">
                         <img src="assets/img/rotate-plant.png" alt="" class="img-fluid rotate-plant">
                     </div>
                     <div class="circle-main">
@@ -474,14 +544,14 @@
         <div class="container">
             <div class="head-sec">
                 <div class="row">
-                    <div class="col-8 left">
+                    <div class="col-lg-8 col-md-12 left">
                         <h4 class="main-head">Our <span class="spec-color">Projects</span></h4>
                         <p class="main-para">Lorem ipsum dolor sit amet consectetur. Ullamcorper luctus netus nunc enim
                             sit egestas auctor
                             facilisis. Scelerisque pretium ipsum iaculis purus ornare. At blandit vitae volutpat mi
                             tempor. Porttitor ultricies </p>
                     </div>
-                    <div class="col-4 right">
+                    <div class="col-lg-4 col-md-12 right">
                         <a href="" class="start-btn">View More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -646,7 +716,7 @@
                         </div>
                         <div class="d-flex social">
                             <p class="title">SOCIAL</p>
-                            <div class="d-flex gap-4">
+                            <div class="d-flex align-items-center gap-4">
                                 <i class="fa-brands fa-x-twitter"></i>
                                 <i class="fa-brands fa-pinterest-p"></i>
                                 <i class="fa-brands fa-instagram"></i>

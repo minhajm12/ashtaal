@@ -80,10 +80,13 @@ $(document).ready(function(){
     // Initialize Owl Carousel
     var owl = $('.main-slider-colums').owlCarousel({
         items: 1,
+        margin:20,
         animateOut: 'animate__zoomOut',
         animateIn: 'animate__zoomIn',
         loop: true,
         nav: true,
+        autoplay:true,
+        autoplayTimeout:8000,
         touchDrag: false,
         mouseDrag: false,
         slideToScroll: 1
@@ -132,7 +135,7 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
       // when window width is >= 768px
       768: {
-        slidesPerView: 2.5,
+        slidesPerView: 1.5,
         spaceBetween: 30
       },
       // when window width is >= 1024px
