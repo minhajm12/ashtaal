@@ -1234,6 +1234,22 @@ p,h1,h2,h3,h4,h5,h6
 @media screen and (max-width: 1536px)
 {
 
+    #whatwedo-section .slide-item .title p
+    {
+        font-size: 16px;
+    }
+    #projectsection .start-btn
+    {
+        font-size: 20px;
+    }
+    #whatwedo-section .start-btn
+    {
+        font-size: 20px;
+    }
+    #footersection .right .contact-details .title
+    {
+        width: 200px;
+    }
     .navbar-brand img
     {
         width: 80px;
@@ -1299,7 +1315,7 @@ p,h1,h2,h3,h4,h5,h6
     }
     #projectsection .project-main
     {
-        height: 360vh;
+        height: 365vh;
     }
     
     #main-banner .navbar-nav
@@ -1327,6 +1343,14 @@ p,h1,h2,h3,h4,h5,h6
 
 @media only screen and (max-width: 999px)
 {
+    #projectsection .start-btn
+    {
+        font-size: 18px;
+    }
+    #whatwedo-section .start-btn
+    {
+        font-size: 18px;
+    }
     .navbar-brand img
     {
         width: 100px;
