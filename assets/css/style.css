@@ -1388,6 +1388,13 @@ p,h1,h2,h3,h4,h5,h6
 
 
 
+@media screen and (max-width: 1366px)
+{
+    #banner-section .owl-carousel .owl-nav
+    {
+        bottom: -10%;
+    }
+}
 
 
 
