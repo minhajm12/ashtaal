@@ -21,6 +21,9 @@ p,h1,h2,h3,h4,h5,h6
 }
 
 
+
+
+
 /* BANNER SECTION */
 #banner-full
 {
@@ -91,6 +94,9 @@ p,h1,h2,h3,h4,h5,h6
     align-items: center;
 }
 
+
+
+/* HEADER */
 #header .right .webstore
 {
     padding:10px 20px;
@@ -116,6 +122,10 @@ p,h1,h2,h3,h4,h5,h6
     
     
 } */
+.dropdown-menu.show
+{
+    border: none;
+}
 #header .right .cart
 {
     position: relative;
@@ -159,6 +169,17 @@ p,h1,h2,h3,h4,h5,h6
     color: #fff;
     font-weight: 500;
 }
+#main-banner .navbar .nav-link.active
+{
+    color: var(--main-color);
+}
+#main-banner .navbar .nav-link:hover
+{
+    color: var(--main-color);
+}
+
+
+
 
 
 #banner-section
@@ -606,6 +627,7 @@ p,h1,h2,h3,h4,h5,h6
     flex-direction: column;
     align-items: center;
     gap:10px;
+    z-index: 100;
 }
 #banner-section .social-icons i
 {
@@ -664,6 +686,7 @@ p,h1,h2,h3,h4,h5,h6
 .main-para
 {
     font-size: 18px;
+    margin-top: 20px !important;
 }
 #aboutsection
 {
@@ -686,7 +709,6 @@ p,h1,h2,h3,h4,h5,h6
 #aboutsection .about-main .main-para
 {
     text-align: center;
-    margin-top: 20px !important;
 }
 
 
@@ -703,6 +725,11 @@ p,h1,h2,h3,h4,h5,h6
 #aboutsection .main-grid img
 {
     width: 100%;
+    transition: .3s ease;
+}
+#aboutsection .main-grid div
+{
+    overflow: hidden;
     border-radius: 20px;
 }
 .grid-img-1
@@ -724,12 +751,22 @@ p,h1,h2,h3,h4,h5,h6
     grid-area: 1 / 5 / 5 / 9;
 
 }
+#aboutsection .main-grid img:hover
+{
+    transform: scale(1.1);
+}
 
 
 
 
 
 
+
+
+
+
+
+/* WHAT WE DO */
 #whatwedo-section
 {
     padding:4% 0;
@@ -1080,6 +1117,10 @@ p,h1,h2,h3,h4,h5,h6
 {
     font-size: 20px;
 }
+#projectsection .project-main .project-img-div img
+{
+    transition: .3s ease;
+}
 #projectsection .project-main .project-img-div
 {
     position: relative;
@@ -1088,6 +1129,10 @@ p,h1,h2,h3,h4,h5,h6
     justify-content: center;
     border-radius: 20px;
     overflow: hidden;
+}
+#projectsection .project-main .project-img-div:hover img
+{
+    transform: scale(1.1);
 }
 #projectsection .project-main .view-div
 {
@@ -1230,10 +1275,14 @@ p,h1,h2,h3,h4,h5,h6
 
 
 
+/*RESPONSIVE SECTION*/
 
 @media screen and (max-width: 1536px)
 {
-
+    #header .right .webstore
+    {
+        padding: 8px 20px;
+    }
     #whatwedo-section .slide-item .title p
     {
         font-size: 16px;
@@ -1265,7 +1314,7 @@ p,h1,h2,h3,h4,h5,h6
     }
     #banner-section .text-col p
     {
-        width: 100%;
+        width: 90%;
     }
     #banner-section .main-img-div .rectangle-1,
     #banner-section .main-img-div .rectangle-2,
@@ -1288,6 +1337,7 @@ p,h1,h2,h3,h4,h5,h6
     #banner-section .main-slider-colums .right .bottom
     {
         padding-top: 40px;
+        width: 80%;
     }
     #banner-section .main-slider-colums .right .btm-nmbrs
     {
@@ -1327,7 +1377,153 @@ p,h1,h2,h3,h4,h5,h6
     {
         font-size: 16px;
     }
+    #banner-section .main-slider-colums .right .bottom h3
+    {
+        font-size: 28px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px)
+{
+    #main-banner .navbar-nav
+    {
+        padding-left: 0;
+        gap:20px;
+    }
+    #main-banner .navbar .nav-link
+    {
+        padding: 0;
+    }
+    .navbar-brand img
+    {
+        width: 60px;
+    }
+    #header .right .webstore
+    {
+        padding: 5px 15px;
+    }
+    #main-banner #header .right
+    {
+        gap:15px;
+    }
+    #header .right .cart img,
+    #header .right .sign-in img
+    {
+        width: 18px;
+    }
+    #banner-section .main-img-div .rectangle-1, #banner-section .main-img-div .rectangle-2, #banner-section .main-img-div .rectangle-3
+    {
+        height: 50vh;
+    }
+    #banner-section .owl-carousel .owl-nav {
+        bottom: -10%;
+        right: 40%;
+    }
+    #banner-section .main-slider-colums .right .btm-nmbrs
+    {
+        font-size: 18px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1024px)
+{
+    #main-banner .navbar .nav-link
+    {
+        text-wrap: nowrap;
+        font-size: 14px;
+    }
+    #header .right .webstore
+    {
+        text-wrap: nowrap;
+        font-size: 14px;
+    }
+    #header .right .sign-in a
+    {
+        font-size: 14px;
+        text-wrap: nowrap;
+    }
+    #main-banner .navbar-nav
+    {
+        gap: 15px;
+    }
+    #main-banner .container-fluid
+    {
+        padding: 0 2%;
+    }
+    #banner-section .main-img-div .rectangle-1, #banner-section .main-img-div .rectangle-2, #banner-section .main-img-div .rectangle-3
+    {
+        height: 50vh;
+        bottom: -30%;
+    }
+    #banner-section .img-div-2 .circle-div, #banner-section .img-div-3 .circle-div
+    {
+        width: 100px;
+        height: 100px;
+    }
+    #banner-section .social-icons
+    {
+        right: 0;
+    }
+    #banner-section .img-div-2, #banner-section .img-div-3
+    {
+        height: 130px;
+    }
+    #banner-section .text-col h1
+    {
+        font-size: 40px;
+    }
+    #banner-section .main-slider-colums .right .top
+    {
+        transform: translateX(-30px);
+    }
+    #banner-section .owl-carousel .owl-nav .owl-prev,
+    #banner-section .owl-carousel .owl-nav .owl-next
+    {
+        width: 25px;
+        height: 25px;
+    }
+    #banner-section .owl-carousel .owl-nav
+    {
+        right: 39%;
+    }
+    #banner-section .main-slider-colums .left .pricing-main {
+        left: 0;
+        width: 100%;
+    }
+    #banner-section .circle-main {
+        bottom: -22%;
+        transform: scale(0.6);
+    }
+    #banner-section .social-icons .follow-us,
+    #banner-section .social-icons
+    {
+        font-size: 14px;
+    }
+    #banner-section .main-slider-colums .right .btm-nmbrs
+    {
+        font-size: 16px;
+    }
+}
+
+
+
+
 
 
 
@@ -1343,6 +1539,32 @@ p,h1,h2,h3,h4,h5,h6
 
 @media only screen and (max-width: 999px)
 {
+    #banner-section .main-slider-colums .right .bottom
+    {
+        width: 100%;
+    }
+    #banner-section .img-div-2, #banner-section .img-div-3
+    {
+        height: 170px;
+    }
+    #banner-section .owl-carousel .owl-nav {
+        bottom: -10%;
+        right: 40%;
+    }
+    #banner-section .social-icons .follow-us,
+    #banner-section .social-icons
+    {
+        font-size: 16px;
+    }
+    #banner-section .main-slider-colums .right .btm-nmbrs
+    {
+        font-size: 18px;
+    }
+    
+    #main-banner .container-fluid
+    {
+        padding: 0 4%;
+    }
     #projectsection .start-btn
     {
         font-size: 18px;
@@ -1354,6 +1576,10 @@ p,h1,h2,h3,h4,h5,h6
     .navbar-brand img
     {
         width: 100px;
+    }
+    #header .right .cart span
+    {
+        padding: 2px 8px;
     }
     #banner-section .main-img-div .rectangle-1, #banner-section .main-img-div .rectangle-2, #banner-section .main-img-div .rectangle-3
     {
@@ -1379,7 +1605,7 @@ p,h1,h2,h3,h4,h5,h6
     }
     #banner-section .owl-carousel .owl-nav {
         bottom: -10%;
-        right: 30%;
+        right: 32%;
     }
     #banner-section .circle-main {
         right: 5%;
@@ -1400,8 +1626,8 @@ p,h1,h2,h3,h4,h5,h6
     }
     #banner-section .img-div-2 .circle-div, #banner-section .img-div-3 .circle-div
     {
-        /* width: 120px; */
-        /* height: 120px; */
+        width: 120px;
+        height: 120px;
     }
     #banner-section .main-slider-colums .right .top img
     {
@@ -1475,7 +1701,7 @@ p,h1,h2,h3,h4,h5,h6
     #projectsection .head-sec .right
     {
         justify-content: start;
-        padding:40px 0 0 0;
+        padding:40px 10px 0;
     }
     #projectsection .project-main
     {
@@ -1539,6 +1765,20 @@ p,h1,h2,h3,h4,h5,h6
         color: var(--main-color) !important;
         font-weight: 600 !important;
     }
+
+    .offcanvas-header .btn-close
+    {
+        background: url(../img/svg/offcanvas-close.svg);
+        background-size: contain;
+        width: 5px;
+        height: 5px;
+        opacity: 1;
+        /* transform: translateX(-15px);    */
+    }
+    #banner-section .text-col h1
+    {
+        font-size: 50px;
+    }
 }
 
 
@@ -1561,6 +1801,40 @@ p,h1,h2,h3,h4,h5,h6
     {
         gap:0;
     } */
+    #projectsection .start-btn
+    {
+        font-size: 16px;
+    }
+    #aboutsection .about-main .main-para,
+    #aboutsection .about-main .main-head, #aboutsection .about-main .top-head
+    {
+        text-align: left;
+    }
+    .main-head
+    {
+        font-size: 26px;
+    }
+    .top-head
+    {
+        font-size: 16px;
+    }
+    .main-para
+    {
+        margin-top: 10px !important;
+    }
+    #whatwedo-section .start-btn
+    {
+        font-size: 16px;
+    }
+    #whatwedo-section .left .main-head
+    {
+        width: 92%;
+    }
+    #stepfwd-section .circle-rotate-div
+    {
+        width: 160px;
+        height: 160px;
+    }
 
     #banner-section .social-icons
     {
@@ -1595,7 +1869,7 @@ p,h1,h2,h3,h4,h5,h6
     #stepfwd-section .circle-main {
         right: 0%;
         bottom: 0%;
-        transform: scale(0.8);
+        transform: scale(0.7);
     }
     #stepfwd-section .left .img-div .rotate-plant
     {
@@ -1606,6 +1880,11 @@ p,h1,h2,h3,h4,h5,h6
     {
         display: flex;
         flex-direction: column;
+    }
+
+    #whatwedo-section .right .slide-item .item-img
+    {
+        height: 55vh;
     }
 
 
@@ -1708,6 +1987,13 @@ p,h1,h2,h3,h4,h5,h6
         width: 10%;
     }
 
+    #main-banner .navbar .nav-link
+    {
+        font-size: 20px !important;
+    }
+
+    
+
 
 }
 
@@ -1717,6 +2003,18 @@ p,h1,h2,h3,h4,h5,h6
     .main-colums
     {
         margin-top:40px;
+    }
+    #whatwedo-section .right .slide-item .item-details
+    {
+        padding: 0 15px 15px;
+    }
+    #banner-section .text-col h1
+    {
+        font-size: 24px;
+    }
+    #banner-section .text-col h1 img
+    {
+        width: 30px;
     }
 }
 

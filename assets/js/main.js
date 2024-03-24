@@ -1,4 +1,4 @@
-// Header Height Selection
+// Get Height into variables
 
 const headerHeight = document.getElementById('header').offsetHeight;
 const mainHeight = document.getElementById('main-banner').offsetHeight;
@@ -8,7 +8,7 @@ const bannerHeight = document.getElementById('banner-section').offsetHeight;
 document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
 document.documentElement.style.setProperty('--main-height', `${mainHeight}px`);
 document.documentElement.style.setProperty('--banner-height', `${bannerHeight}px`);
-// console.log(containerWidth);
+// console.log(bannerHeight);
 
 
 
@@ -76,41 +76,23 @@ document.documentElement.style.setProperty('--banner-height', `${bannerHeight}px
 
 
 
+
+// OWL owlCarousel
+
 $(document).ready(function(){
-    // Initialize Owl Carousel
-    var owl = $('.main-slider-colums').owlCarousel({
-        items: 1,
-        margin:20,
-        animateOut: 'animate__zoomOut',
-        animateIn: 'animate__zoomIn',
-        loop: true,
-        nav: true,
-        autoplay:true,
-        autoplayTimeout:8000,
-        touchDrag: false,
-        mouseDrag: false,
-        slideToScroll: 1
+    $('.main-slider-colums').owlCarousel({
+      items: 1,
+      margin:20,
+      animateOut: 'animate__zoomOut',
+      animateIn: 'animate__zoomIn',
+      loop: true,
+      nav: true,
+      // autoplay:true,
+      // autoplayTimeout:10000,
+      touchDrag: false,
+      mouseDrag: false,
+      slideToScroll: 1
     });
-
-    // // Add event listener for slide change
-    // owl.on('changed.owl.carousel', function(event) {
-    //     var currentIndex = event.item.index;
-    //     changeBackgroundColor(currentIndex);
-    // });
-
-    // // Function to change background color based on slide index
-    // function changeBackgroundColor(index) {
-    //     if (index === 0 || index === 2) {
-    //         $('#main-banner').css('background-color', '#67A58040'); // Change background color for first and third slide
-    //     } else if (index === 2) {
-    //         $('#main-banner').css('background-color', '#FF0000'); // Change background color for second slide
-    //     } else {
-    //         $('#main-banner').css('background-color', '#eee'); // Default background color
-    //     }
-    // }
-
-    // // Manually trigger background color change after initialization
-    // owl.trigger('changed.owl.carousel', {item: {index: owl.find('.owl-item.active').index()}});
 });
 
 
