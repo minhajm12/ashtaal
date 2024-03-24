@@ -1394,6 +1394,14 @@ p,h1,h2,h3,h4,h5,h6
     {
         bottom: -10%;
     }
+    #banner-section .main-slider-colums .right .btm-nmbrs
+    {
+        padding-top: 20px;
+    }
+    #banner-section .main-slider-colums .right .bottom
+    {
+        padding-top: 20px;
+    }
 }
 
 
