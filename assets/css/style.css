@@ -1730,6 +1730,7 @@ p,h1,h2,h3,h4,h5,h6
     #projectsection .project-main .project-desc
     {
         align-items: start;
+        justify-content: space-between;
     }
 
 
@@ -1794,6 +1795,25 @@ p,h1,h2,h3,h4,h5,h6
     {
         font-size: 50px;
     }
+    #projectsection .project-main .items
+    {
+        width: 100%;
+        margin-top:0;
+    }
+    #projectsection .project-main
+    {
+        height: 100%;
+        flex-flow: wrap;
+        gap:10px;
+    }
+    #projectsection
+    {
+        padding: 10% 0;
+    }
+    #projectsection .project-main p
+    {
+        font-size: 26px;
+    }
 }
 
 
@@ -1816,6 +1836,10 @@ p,h1,h2,h3,h4,h5,h6
     {
         gap:0;
     } */
+    #projectsection .project-main p
+    {
+        font-size: 18gitpx;
+    }
     #projectsection .start-btn
     {
         font-size: 16px;
@@ -1870,17 +1894,8 @@ p,h1,h2,h3,h4,h5,h6
     {
         padding: 10% 0 10% 0;
     }
-    #projectsection .project-main
-    {
-        height: 100%;
-        flex-flow: wrap;
-        gap:10px;
-    }
-    #projectsection .project-main .items
-    {
-        width: 100%;
-        margin-top:0;
-    }
+    
+    
     #stepfwd-section .circle-main {
         right: 0%;
         bottom: 0%;
