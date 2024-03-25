@@ -2051,5 +2051,9 @@ p,h1,h2,h3,h4,h5,h6
     {
         transform: translateX(-15px);  
     }
+    .offcanvas.show:not(.hiding), .offcanvas.showing
+    {
+        width: 90% !important;
+    }
 }
 
