@@ -1785,7 +1785,8 @@ p,h1,h2,h3,h4,h5,h6
 
     .offcanvas-header .btn-close
     {
-        background: url(../img/svg/offcanvas-close.svg);
+        /* background: url(../img/svg/offcanvas-close.svg); */
+        background: none !important;
         background-size: contain;
         width: 5px;
         height: 5px;
