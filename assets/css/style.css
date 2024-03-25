@@ -1071,7 +1071,8 @@ p,h1,h2,h3,h4,h5,h6
     flex-flow: column wrap;
     gap: 40px;
     align-content: space-between;
-    height: 275vh;
+    /* height: 275vh; */
+    height: calc(var(--project-height) / 2 + 500px);
     /* grid-template-columns: 1fr 1fr; */
     
 }
@@ -1364,10 +1365,11 @@ p,h1,h2,h3,h4,h5,h6
         width: 130px;
         height: 130px;
     }
-    #projectsection .project-main
+    /* #projectsection .project-main
     {
         height: 365vh;
-    }
+
+    } */
     
     #main-banner .navbar-nav
     {
@@ -1719,11 +1721,11 @@ p,h1,h2,h3,h4,h5,h6
         justify-content: start;
         padding:40px 10px 0;
     }
-    #projectsection .project-main
+    /* #projectsection .project-main
     {
         height: 140vh;
         row-gap:0;
-    }
+    } */
     #projectsection .project-main .project-desc span
     {
         display: none;
