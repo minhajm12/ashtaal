@@ -1793,6 +1793,11 @@ p,h1,h2,h3,h4,h5,h6
         opacity: 1;
         transform: translateX(-15px);   
     }
+    .offcanvas-header .btn-close i
+    {
+        font-size: 30px;
+        color: var(--main-color);
+    }
     #banner-section .text-col h1
     {
         font-size: 50px;
