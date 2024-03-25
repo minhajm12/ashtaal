@@ -1790,7 +1790,7 @@ p,h1,h2,h3,h4,h5,h6
         width: 5px;
         height: 5px;
         opacity: 1;
-        /* transform: translateX(-15px);    */
+        transform: translateX(-15px);   
     }
     #banner-section .text-col h1
     {
@@ -2046,6 +2046,10 @@ p,h1,h2,h3,h4,h5,h6
     #banner-section .text-col h1 img
     {
         width: 30px;
+    }
+    .offcanvas-header .btn-close
+    {
+        transform: translateX(-15px);  
     }
 }
 
